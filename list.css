@@ -1,0 +1,104 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(195, 92, 233) ;
+}
+.box{
+    position: relative;
+    width: 600px;
+    height: 550px;
+    color: black;
+    padding: 5px 55px;
+}
+h2{
+    padding: 20px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#input{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;  
+    padding:15px;
+    font-size: 1em;
+}
+.box li{
+   justify-content: center;
+   width: 80%;
+    text-align: center;
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin: 15px 0 ;
+   padding: 10px;
+   min-height: 45px;
+   cursor: pointer;
+   border-radius: 22px;
+   background:rgb(255, 255, 255);
+   color: black;
+}
+.box li.done{
+    background:rgb(150, 210, 160);
+}
+.box li i {
+    position:absolute;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(212, 16, 16);
+    border-radius: 50%;
+}
+.box li i::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+}
+.box li i::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: white;
+    transform: rotate(-45deg);
+}
+.box li::before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: #00991c;
+    border-radius: 50%;
+}
+.box li.done:after{
+    content: '';
+    position: absolute;
+    left: 16px;
+    transform: rotate(315deg);
+    width: 12px;
+    height: 6px;
+     border-bottom: 2px solid white;
+     border-left: 2px solid white;
+}
+#list{
+    position: relative;
+    margin: 20px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
